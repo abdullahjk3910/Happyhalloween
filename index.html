@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Halloween 2026 🎃</title>
+  <meta name="description" content="แชร์สถานที่เที่ยว Halloween และพูดคุยกับเพื่อน ๆ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="fog"></div>
+    <div class="hero-inner">
+      <div class="badge">🎃 HAPPY HALLOWEEN 2026 👻</div>
+      <h1>ฮาโลวีน ปีนี้ทุกคนไปไหนกันครับ?</h1>
+      <p>มาแชร์ที่เที่ยว Halloween และคุยสนุก ๆ กับเพื่อนกัน!</p>
+      <a class="button" href="#comments">💬 ดูความคิดเห็น</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="card poster">
+      <img src="halloween-card.jpg" alt="บัตร Happy Halloween">
+    </section>
+
+    <section class="card intro">
+      <h2>🕸️ Happy Halloween!</h2>
+      <p>ขอให้อยู่นาน ๆ กับ Halloween ปีนี้นะครับ 🎃</p>
+      <p class="small">ใครมีที่เที่ยวเด็ด ๆ เอามาแชร์กันได้เลย</p>
+    </section>
+
+    <section class="card" id="comments">
+      <h2>💬 ความคิดเห็นจากเพื่อน ๆ</h2>
+      <form id="commentForm">
+        <input id="name" maxlength="40" placeholder="ชื่อของคุณ" required>
+        <textarea id="comment" maxlength="500" rows="4"
+          placeholder="ปีนี้ไปเที่ยว Halloween ที่ไหน หรืออยากบอกอะไรเพื่อน ๆ?" required></textarea>
+        <button class="button" type="submit">👻 โพสต์ความคิดเห็น</button>
+        <p id="status" class="status"></p>
+      </form>
+      <div id="commentList" class="comment-list">
+        <div class="empty">กำลังโหลดความคิดเห็น...</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📍 แชร์ที่เที่ยว Halloween</h2>
+      <form id="placeForm">
+        <input id="placeName" maxlength="100" placeholder="ชื่อสถานที่" required>
+        <input id="placeDetail" maxlength="300" placeholder="บอกเพื่อน ๆ ว่ามีอะไรน่าสนใจ" required>
+        <button class="button" type="submit">🦇 แชร์สถานที่</button>
+        <p id="placeStatus" class="status"></p>
+      </form>
+      <div id="placeList" class="place-list">
+        <div class="empty">กำลังโหลดสถานที่...</div>
+      </div>
+    </section>
+
+    <section class="ideas">
+      <h2>💡 ไอเดียเที่ยว Halloween</h2>
+      <div class="idea-grid">
+        <div>🎢 งานสวนสนุก / ธีม Halloween</div>
+        <div>🏚️ บ้านผีสิง / งานวัด</div>
+        <div>🎬 ดูหนังสยองกับเพื่อน</div>
+        <div>🍬 Trick or Treat</div>
+        <div>🎃 จัดปาร์ตี้ที่บ้าน</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Happyhalloween.com 🎃</strong>
+    <span>สร้างพื้นที่ให้ทุกคนมาแชร์ Halloween ด้วยกัน</span>
+  </footer>
+
+  <!-- Supabase JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
